@@ -77,3 +77,101 @@ def test_check_button_success(web_session):
     el.click()
     el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button success"]')
     assert el.get_attribute("id") != button_id
+
+
+def test_check_table_header_one(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[1]')
+    th_text = el.text
+    assert th_text == "Lorem"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[1]').text == th_text
+
+
+def test_check_table_header_two(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[2]')
+    th_text = el.text
+    assert th_text == "Ipsum"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[2]').text == th_text
+
+
+def test_check_table_header_three(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[3]')
+    th_text = el.text
+    assert th_text == "Dolor"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[3]').text == th_text
+
+
+def test_check_table_header_four(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[4]')
+    th_text = el.text
+    assert th_text == "Sit"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[4]').text == th_text
+
+
+def test_check_table_header_five(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[5]')
+    th_text = el.text
+    assert th_text == "Amet"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[5]').text == th_text
+
+
+def test_check_table_header_six(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[6]')
+    th_text = el.text
+    assert th_text == "Diceret"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[6]').text == th_text
+
+
+def test_check_table_header_seven(web_session):
+    """
+    # TODO Add test description
+    :rtype: object
+    """
+    el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[7]')
+    th_text = el.text
+    assert th_text == "Action"
+    button = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
+    button.click()
+    print(th_text)
+    assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[7]').text == th_text
