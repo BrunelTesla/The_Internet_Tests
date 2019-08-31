@@ -39,13 +39,14 @@ def test_check_page_header(web_session, settings):
     This test checks that the page header matches the expected name "Challenging DOM"
     :rtype: object
     """
-    print("Checking Page Header", settings["web_url"])  # TODO Fix this line after
+    print("Checking Page Header", settings["web_url"])
     assert web_session.find_element_by_xpath('//div[@class="example"]/h3').text == "Challenging DOM"
 
 
 def test_check_button(web_session):
     """
-    # TODO Add test description
+    Test that checks the operation of the element "button"
+    This also checks that the element attribute "id" is changed after the button is clicked
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
@@ -57,7 +58,8 @@ def test_check_button(web_session):
 
 def test_check_button_alert(web_session):
     """
-    # TODO Add test description
+    Test that checks the operation of the element "button alert"
+    This also checks that the element attribute "id" is changed after the button is clicked
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button alert"]')
@@ -69,7 +71,8 @@ def test_check_button_alert(web_session):
 
 def test_check_button_success(web_session):
     """
-    # TODO Add test description
+    Test that checks the operation of the element "button success"
+    This also checks that the element attribute "id" is changed after the button is clicked
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button success"]')
@@ -81,7 +84,8 @@ def test_check_button_success(web_session):
 
 def test_check_table_header_one(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the first header of the table
+    This also checks that the text of the first header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[1]')
@@ -95,7 +99,8 @@ def test_check_table_header_one(web_session):
 
 def test_check_table_header_two(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the second header of the table
+    This also checks that the text of the second header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[2]')
@@ -109,7 +114,8 @@ def test_check_table_header_two(web_session):
 
 def test_check_table_header_three(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the third header of the table
+    This also checks that the text of the third header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[3]')
@@ -123,7 +129,8 @@ def test_check_table_header_three(web_session):
 
 def test_check_table_header_four(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the forth header of the table
+    This also checks that the text of the forth header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[4]')
@@ -137,7 +144,8 @@ def test_check_table_header_four(web_session):
 
 def test_check_table_header_five(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the fifth header of the table
+    This also checks that the text of the fifth header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[5]')
@@ -151,7 +159,8 @@ def test_check_table_header_five(web_session):
 
 def test_check_table_header_six(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the sixth header of the table
+    This also checks that the text of the sixth header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[6]')
@@ -165,7 +174,8 @@ def test_check_table_header_six(web_session):
 
 def test_check_table_header_seven(web_session):
     """
-    # TODO Add test description
+    Test that checks the text of the seventh header of the table
+    This also checks that the text of the seventh header dose not change after a page refresh
     :rtype: object
     """
     el = web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[7]')
