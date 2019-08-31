@@ -185,3 +185,8 @@ def test_check_table_header_seven(web_session):
     button.click()
     print(th_text)
     assert web_session.find_element_by_xpath('//div[@class="large-10 columns"]/table/thead/tr/th[7]').text == th_text
+
+
+# TODO add test to store answer produced by script element refresh page and check that new answer is produced.
+
+# TODO add test to check non functioning edit and delete buttons.
