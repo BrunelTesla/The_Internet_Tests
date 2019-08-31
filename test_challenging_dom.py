@@ -36,45 +36,44 @@ def test_load_page(web_session: object, settings) -> object:
 
 def test_check_page_header(web_session, settings):
     """
-    THis test checks that the page header matches the expected name "Challenging DOM"
+    This test checks that the page header matches the expected name "Challenging DOM"
     :rtype: object
     """
-    print("Checking Page Header", settings["web_url"]) # TODO Fix this line after
+    print("Checking Page Header", settings["web_url"])  # TODO Fix this line after
     assert web_session.find_element_by_xpath('//div[@class="example"]/h3').text == "Challenging DOM"
 
 
-def test_check_button(web_session, settings):
+def test_check_button(web_session):
     """
-    add test descip
+    # TODO Add test description
     :rtype: object
     """
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
     button_id = el.get_attribute("id")
     el.click()
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button"]')
     assert el.get_attribute("id") != button_id
 
 
-def test_check_button_alert(web_session, settings):
+def test_check_button_alert(web_session):
     """
-    add test descip
+    # TODO Add test description
     :rtype: object
     """
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button alert"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button alert"]')
     button_id = el.get_attribute("id")
     el.click()
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button alert"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button alert"]')
     assert el.get_attribute("id") != button_id
 
 
-def test_check_button_success(web_session, settings):
+def test_check_button_success(web_session):
     """
-    add test descip
+    # TODO Add test description
     :rtype: object
     """
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button success"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button success"]')
     button_id = el.get_attribute("id")
     el.click()
-    el = web_session.find_element_by_xpath('//div[@class="large-12 columns large-centered"]/div[@class="large-2 columns"]/a[@class="button success"]')
+    el = web_session.find_element_by_xpath('//div[@class="large-2 columns"]/a[@class="button success"]')
     assert el.get_attribute("id") != button_id
-
