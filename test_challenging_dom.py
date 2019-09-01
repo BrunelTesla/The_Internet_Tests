@@ -194,7 +194,7 @@ def test_check_first_table_edit_button(web_session):
     """
     el = web_session.find_element_by_xpath('//div[2]/table/tbody/tr[1]/td[7]/a[1]')
     if el.is_enabled():
-        el.click()
+        print("Edit Enabled")
     else:
         print("Edit not enabled")
 
@@ -206,9 +206,9 @@ def test_check_first_table_delete_button(web_session):
     """
     el = web_session.find_element_by_xpath('//div[2]/table/tbody/tr[1]/td[7]/a[2]')
     if el.is_enabled():
-        el.click()
+        print("Delete Enabled")
     else:
-        print("Edit not enabled")
+        print("Delete not enabled")
 
 
 # TODO add test to store answer produced by script element refresh page and check that new answer is produced.
