@@ -211,4 +211,4 @@ def test_check_first_table_delete_button(web_session):
         print("Delete not enabled")
 
 
-# TODO add test to store answer produced by script element refresh page and check that new answer is produced.
+# TODO add test to store answer produced by script element, refresh page, and check that new answer is produced.
