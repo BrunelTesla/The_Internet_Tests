@@ -210,4 +210,5 @@ def test_check_first_table_delete_button(web_session):
     else:
         print("Edit not enabled")
 
+
 # TODO add test to store answer produced by script element refresh page and check that new answer is produced.
